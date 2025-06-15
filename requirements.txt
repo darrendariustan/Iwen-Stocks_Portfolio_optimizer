@@ -1,0 +1,11 @@
+streamlit==1.32.0
+yahooquery==2.3.3
+seaborn==0.13.1
+pandas==2.1.4
+numpy==1.26.3
+matplotlib==3.8.2
+plotly==5.18.0
+openai==1.12.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+PyPortfolioOpt==1.5.5
