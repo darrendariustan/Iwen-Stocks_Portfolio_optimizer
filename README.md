@@ -1,4 +1,3 @@
-# Stocks_Portfolio_optimizer
 # I-Wen's Stock Portfolio Optimizer & AI Stock Advisor
 
 ## 📋 Project Overview
