@@ -13,6 +13,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Fix the seaborn-deep style issue in PyPortfolioOpt
+RUN sed -i 's/plt.style.use("seaborn-deep")/plt.style.use("seaborn-v0_8-deep" if "seaborn-v0_8-deep" in plt.style.available else "default")/g' /usr/local/lib/python3.10/site-packages/pypfopt/plotting.py
+
 # Copy the rest of the application
 COPY . .
 
